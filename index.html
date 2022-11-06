@@ -18,7 +18,7 @@
 
       <div class="first-row">
         <input type="text" name="result" class="result" id="result" value="" placeholder="Result" readonly />
-        <input type="button" value="C" onclick="clearScreen()" class="clear" />
+        <input type="button" value="C" onclick="clearScreen(), new Audio('audio/1.mp3').play()" class="clear" />
       </div>
       <div class="second-row">
         <input type="button" value="1" onclick="liveScreen(1)" id="one" />
@@ -43,7 +43,7 @@
 
         <input type="button" value="0" id="zero" onclick="liveScreen(0)" />
         <input type="button" value="." class="dot" onclick="liveScreen('.')" />
-        <input type="button" value="=" onclick="result.value = eval(result.value), new Audio('audio/2.mp3').play()" />
+        <input type="button" value="=" onclick="result.value = eval(result.value)" />
       </div>
       <div class="bottom-buttons">
         <a href="https://github.com/zxcodes/JavaScript-Calculator"><i class="fab fa-github"></i>
